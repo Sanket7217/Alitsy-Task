@@ -1,0 +1,99 @@
+﻿.badge {
+    padding: 1px 9px 2px;
+    font-size: 12.025px;
+    font-weight: bold;
+    white-space: nowrap;
+    color: #ffffff;
+    background-color: #999999;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+}
+
+.badge-info {
+    background-color: #3a87ad;
+}
+
+    .badge-info:hover {
+        background-color: #2d6987;
+    }
+
+h4.panel-title {
+    color: #a2a9a0;
+}
+
+.row-panel {
+    padding: 50px 0px;
+}
+
+.tab-pane {
+    padding: 20px;
+}
+
+.row {
+    padding: 20px 50px;
+}
+
+.row-importElectricity {
+    padding: 5px;
+}
+
+.panel {
+    border: 10;
+}
+
+.btn-submit {
+    margin: 10px;
+}
+
+.tg {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+    .tg td {
+        border-color: black;
+        border-style: solid;
+        border-width: 0px;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        overflow: hidden;
+        padding: 10px 5px;
+        word-break: normal;
+    }
+
+    .tg th {
+        border-color: black;
+        border-style: solid;
+        border-width: 0px;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        overflow: hidden;
+        padding: 10px 5px;
+        word-break: normal;
+    }
+
+    .tg .tg-baqh {
+        text-align: center;
+        vertical-align: top;
+    }
+
+    .tg .tg-0lax {
+        text-align: left;
+        vertical-align: top;
+    }
+
+    .tg .tg-0lab {
+        text-align: right;
+        vertical-align: top;
+    }
+
+#error {
+    color: red;
+    text-align: center;
+}
+
+.has-error input[type="peakCharge"] .has-error select {
+    border: 1px solid #a94442;
+}

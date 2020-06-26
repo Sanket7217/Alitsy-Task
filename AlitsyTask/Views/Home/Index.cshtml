@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Front-end application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+          type="text/css">
+
+    <link rel="stylesheet" href="~/Content/style.css" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+
+
+    <script src="@Url.Content("~/js/application.js")" type="text/javascript"></script>
+    
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+            integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+            integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.js"></script>
+</head>
+
+<body>
+    <div class="py-5">
+        <div class="row col-md-12">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <ul class="nav nav-tabs card-header-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" data-target="#tabone">Tariff 1</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <div class="tab-content mt-2">
+                        <div class="tab-pane fade show active" id="tabone" role="tabpanel">
+                            <form data-toggle="validator" role="form" id="formSubmit">
+                                <div class="row-panel">
+                                    <div class="col-md-4 text-right">
+                                        <h5>
+                                            Enter Tariff values excluding/including GST
+                                            <span class="fas fa-question-circle" style="color:blue" title="Enter Tariff if including or excluding GST"></span>
+
+                                        </h5>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="btn-group" data-toggle="buttons">
+                                            <label class="btn btn-primary active">
+                                                <input type="radio" name="gstOptions" id="gstOptions" value="GST excl"> GST excl
+                                            </label>
+                                            <label class="btn btn-primary">
+                                                <input type="radio" name="gstOptions" id="gstOptions" value="GST incl"> GST incl
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default col-md-12">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">Import Electricity</h4>
+                                    </div>
+                                    <div class="panel-body col-md-12">
+                                        <div class="row-importElectricity">
+                                            <div class="col-md-4 text-right">
+                                                <h5>Bill Type </h5>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="btn-group" data-toggle="buttons">
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" name="billTypeOptions" id="billTypeOptions" value="Flat"> Flat
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" name="billTypeOptions" id="billTypeOptions" value="Block"> Block
+                                                    </label>
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" name="billTypeOptions" id="billTypeOptions" value="Time of Use"> Time of Use
+                                                    </label>
+                                                    <label class="btn btn-primary active">
+                                                        <input type="radio" name="billTypeOptions" id="billTypeOptions" value="Unbundled"> Unbundled
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row-importElectricity col-md-12">
+                                            <div class="col-md-4 text-right">
+                                                <h5>Entry Method </h5>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="btn-group" data-toggle="buttons">
+                                                    <label class="btn btn-primary">
+                                                        <input type="radio" name="entryMethodOptions" id="entryMethodOptions" value="Fast"> Fast
+                                                    </label>
+                                                    <label class="btn btn-primary active">
+                                                        <input type="radio" name="entryMethodOptions" id="entryMethodOptions" value="Detailed"> Detailed
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <div class="col-md-4">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <h4>Energy Charges</h4>
+                                            </div>
+                                        </div>
+                                        <div class="row-importElectricity">
+                                            <div class="row-importElectricity col-md-2"></div>
+                                            <div class="row-importElectricity col-md-10">
+                                                <div class="table-responsive">
+                                                    <form data-toggle="validator" role="form" id="formSubmit">
+                                                        <table class="tg">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th class="tg-0lax col-md-2"></th>
+                                                                    <th class="tg-0lax col-md-2">
+                                                                        <span style="font-weight:bold">Charge</span><br>in
+                                                                        dollars
+                                                                    </th>
+                                                                    <th class="tg-0lax col-md-2"><span style="font-weight:bold">Quantity</span><br>in kWh</th>
+                                                                    <th class="tg-0lax col-md-1"></th>
+                                                                    <th class="tg-0lax col-md-2">
+                                                                        <span style="font-weight:bold">Energy Rate</span><br>in dollars
+                                                                        per kWh
+                                                                    </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="tg-0lab"><span style="font-weight:bold">Peak</span></td>
+                                                                    <td class="tg-0lax">
+                                                                        <span class="form-group">
+                                                                            <input type="number" class="form-control" id="peakCharge" required="required" data-error="please enter correct value" onchange="updatePeakER()" />
+                                                                            <div class="help-block with-errors"></div>
+                                                                        </span>
+                                                                    </td>
+                                                                    <td class="tg-0lax">
+                                                                        <span class="form-group">
+                                                                            <input type="number" class="form-control" id="peakQuantity" required="required" data-error="please enter correct value" onchange="updatePeakER()">
+                                                                            <div class="help-block with-errors"></div>
+                                                                        </span>
+                                                                    </td>
+                                                                    <td class="tg-baqh">=</td>
+                                                                    <td class="tg-0lax"><input type="text" class="form-control" id="peakEnergyRate" readonly></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="tg-0lab"><span style="font-weight:bold">Shoulder</span></td>
+                                                                    <td class="tg-0lax">
+                                                                        <span class="form-group">
+                                                                            <input type="number" class="form-control" id="shoulderCharge" required="required" data-error="please enter correct value" onchange="updateShoulderER()">
+                                                                            <div class="help-block with-errors"></div>
+                                                                        </span>
+                                                                    </td>
+                                                                    <td class="tg-0lax">
+                                                                        <span class="form-group">
+                                                                            <input type="number" class="form-control" id="shoulderQuantity" required="required" data-error="please enter correct value" onchange="updateShoulderER()">
+                                                                            <div class="help-block with-errors"></div>
+                                                                        </span>
+                                                                    </td>
+                                                                    <td class="tg-baqh">=</td>
+                                                                    <td class="tg-0lax"><input type="text" class="form-control" id="shoulderEnergyRate" readonly></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="tg-0lab"><span style="font-weight:bold">Off-Peak</span></td>
+                                                                    <td class="tg-0lax">
+                                                                        <span class="form-group">
+                                                                            <input type="number" class="form-control" id="offPeakCharge" required="required" data-error="please enter correct value" onchange="updateOffPeakER()">
+                                                                            <div class="help-block with-errors"></div>
+                                                                        </span>
+                                                                    </td>
+                                                                    <td class="tg-0lax">
+                                                                        <span class="form-group">
+                                                                            <input type="number" class="form-control" id="offPeakQuantity" required="required" data-error="please enter correct value" onchange="updateOffPeakER()">
+                                                                            <div class="help-block with-errors"></div>
+                                                                        </span>
+                                                                    </td>
+                                                                    <td class="tg-baqh">=</td>
+                                                                    <td class="tg-0lax"><input type="text" class="form-control" id="offPeakEnergyRate" readonly></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </form>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <button type="button" id="btn" class="btn btn-warning"><span style="font-weight:bold" class="glyphicon glyphicon-floppy-disk">Save</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+    </div>
+  
+    <script src="@Url.Content("~/js/ajaxCall.js")" type="text/javascript"></script>
+
+</body>
+</html>
+
