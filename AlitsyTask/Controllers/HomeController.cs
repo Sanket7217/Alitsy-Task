@@ -27,9 +27,6 @@ namespace AlitsyTask.Controllers
        
         public ActionResult save(ImportElectricity objdata)
         {
-            //TODO input validation missing 2
-            //TODO Error handling 1
-            Console.WriteLine("inside  add........................");
             return Json(import.SaveRecord(objdata));
         }
 
