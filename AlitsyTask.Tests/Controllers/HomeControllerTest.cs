@@ -34,7 +34,7 @@ namespace AlitsyTask.Tests.Controllers
             importElectricity.OffPeakEnergyRate = 0.5;
 
         
-            Assert.Catch<Exception>(()=>homeController.Save(importElectricity));
+            Assert.Catch<Exception>(()=>homeController.save(importElectricity));
            // Assert.Throws<SqlException>(() => homeController.Save(importElectricity));
         }
 
